@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>shoping online</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+	<style type="text/css">
+		body{
+			display: flex;
+			background-color: #f0f8ff;
+		}
+		div{
+			display: flex;
+			grid-gap: 5px;
+			align-items: center;
+		}
+		 a{
+			text-decoration: none;
+			padding: 10px;
+			color: white;
+		}
+	
+	
+		section{
+			display: flex;
+		}
+		.left{
+			width: 30vw;
+			padding: 20px;
+			background-color: grey;
+
+		}
+		 .left a{box-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
+		 
+			background-color: #12ddff;
+		}
+
+		.right{
+			padding: 5px;
+			width: 35vw;
+			background-color: grey;
+		}
+		
+		.right a{box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+			background-color: #12ddff;
+		}
+
+		.middle{
+			padding: 5px;
+			width: calc(100vw - 70vw);
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, .3)
+			height: 80vh;
+			padding: 20px;
+			
+		}
+		#images{
+			display: flex;
+			width: 32vw;
+		}
+	
+	</style>
+</head>
+<body>
+	<section>
+		<div class="left">
+			<h3><b>SHOP ONLINE</b></h3>
+			<a href="index.html">home</a><br><br>
+			<a href="C:\Users\chi kube\Documents\caudette\exercise 3.html">assignment3</a><br><br>
+			<a href="wepage.html">assigmet1</a>
+			<a href="C:/Users/chi kube/Documents/caudette/Assignment 2/home.html">assigmet2</a>
+			<a href="contact.html">Contact</a><br><br>
+
+			
+			
+		
+		</div>
+		<div class="middle">
+			<img src="" id="images">
+			<script>
+				let image= document.getElementById('images');
+				let images = ['img1.jpg', 'img2.jpg', 'img3.jpg','img4.jpg','image5.jpg','image6.jpg','image9.jpg','image7.jpg','image8.jpg','image10.jpg','image11.jpg','image12.jpg','image13.jpg','image14.jpg',];
+				setInterval(function() {
+					let random = Math.floor(Math.random() * 14);
+					image.src = images[random];
+				}, 800);
+			</script>
+		</div>
+		<div class="right">
+			<a href="shoes.html">Shoes</a>
+			<a href="about.html">About us</a>
+			<a href="girl_clothes.html">Girls <br>clothes</a>
+			<a href="boy_clothes.html">Boys <br>clothes</a><br><br>
+		</div>
+			
+	</section>
+	
+
+</body>
+</html>
+	
